@@ -135,3 +135,26 @@ nav ul li {
     display: none;
   }
 }
+
+.container .row .card .selected :hover {
+  border: 1px solid blue;
+}
+
+.card-img-top {
+  height: 210px;
+}
+.bg-purple {
+  background-color: #7952b3;
+}
+
+.bg-white {
+  background-color: #fdfefe;
+}
+
+.contact-form {
+  background-color: #f4f4f4;
+}
+
+.btn-send {
+  background-color: #e6e4ed;
+}

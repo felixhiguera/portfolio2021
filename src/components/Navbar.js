@@ -1,12 +1,13 @@
 import React from "react";
 import logo from "../logoFelix.png";
+import projects from "./Projects";
 //REACT FONT AWESOME INPUT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-darki ">
+    <nav className="navbar navbar-expand-lg navbar-light bg-darki fixed-top ">
       <div className="container">
         <a className="navbar-brand" href="#">
           <img className="logo" src={logo} alt="logo..." />
@@ -31,11 +32,11 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#aboutme">
                 About me
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="#">
                 Services
               </a>
@@ -44,14 +45,14 @@ const Navbar = () => {
               <a className="nav-link" href="#">
                 How work
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Portfolio
+              <a className="nav-link" href="#projects">
+                Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#contactMe">
                 Contacts
               </a>
             </li>
