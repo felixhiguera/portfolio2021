@@ -4,13 +4,15 @@ import projects from "./Projects";
 //REACT FONT AWESOME INPUT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import profile from "../circle-cropped.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-darki fixed-top ">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          <img className="logo" src={logo} alt="logo..." />
+        <a className="navbar-brand logo-text" href="#">
+          {/* <img className="logo" src={logo} alt="logo..." /> */}
+          <h3 className="text-white ">Felix</h3>
         </a>
         <button
           className="navbar-toggler"
@@ -32,7 +34,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#aboutme">
+              <a className="nav-link" href="#contactMeButton">
                 About me
               </a>
             </li>
@@ -47,12 +49,12 @@ const Navbar = () => {
               </a>
             </li> */}
             <li className="nav-item">
-              <a className="nav-link" href="#projects">
+              <a className="nav-link" href="#aboutme">
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contactMe">
+              <a className="nav-link" href="#textHawai">
                 Contacts
               </a>
             </li>

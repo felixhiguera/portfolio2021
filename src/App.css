@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=RocknRoll+One&display=swap");
 
 :root {
   --primary-white: #ffffff;
@@ -14,6 +15,9 @@ body {
 /* navbar */
 nav {
   z-index: 2;
+}
+.logo-text {
+  font-family: "RocknRoll One", sans-serif;
 }
 .container .navbar-brand {
   display: flex;
@@ -71,7 +75,11 @@ nav ul li {
   background: url(background3.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
+}
+.rounded {
+  width: 250px;
+  height: 150px;
 }
 
 .main-info {
@@ -87,6 +95,10 @@ nav ul li {
   align-items: center;
   text-align: center;
   z-index: 1;
+}
+.main-info a {
+  width: 120px;
+  height: 50px;
 }
 
 .main-info h1 {
@@ -113,13 +125,17 @@ nav ul li {
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: black;
+  color: white;
   margin: 2rem;
 }
 .btn-main-offer:hover {
   text-decoration: none;
   background-color: #e6e4ed;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: black;
+}
+.main-info .photoProfile {
+  padding-top: 3rem;
 }
 
 /* particles-js */
@@ -157,4 +173,27 @@ nav ul li {
 
 .btn-send {
   background-color: #e6e4ed;
+}
+
+.card:hover {
+  border: 1px solid blue;
+  transition: background-color 0.3s ease;
+}
+
+.footer {
+  display: grid;
+
+  justify-content: center;
+}
+.footer h2 {
+  color: white;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formContainer {
+  padding-bottom: 2rem;
 }

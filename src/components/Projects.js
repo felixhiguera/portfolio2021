@@ -7,10 +7,6 @@ import platzi from "../platzi.PNG";
 import countriesapi from "../countriesapi.PNG";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
-import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
-import { faBootstrap } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -27,7 +23,7 @@ const Projects = () => {
           </div>
           <div className="row">
             <div className="col-12 col-md-6 col-lg-4 mb-4 ">
-              <div className="card">
+              <div className="card ">
                 <a
                   href="https://felixhiguera.github.io/mobileFirst/"
                   target="_blank"
@@ -68,11 +64,16 @@ const Projects = () => {
             </div>
             <div className="col-12 col-md-6 col-lg-4 mb-4">
               <div className="card">
-                <img
-                  src={blackjack}
-                  className="card-img-top"
-                  alt="BlackJack game"
-                />
+                <a
+                  href="https://felixhiguera.github.io/blackjack/"
+                  target="_blank"
+                >
+                  <img
+                    src={blackjack}
+                    className="card-img-top"
+                    alt="BlackJack game"
+                  />
+                </a>
                 <div className="card-body">
                   <div class="badges mb-2">
                     <span class="badge bg-secondary">HTML</span>
@@ -82,9 +83,10 @@ const Projects = () => {
                   </div>
                   <h5 className="card-title">BlackJack Game</h5>
                   <p className="card-text">
-                    This modern and appealing website was built with ‘’Mobile
-                    First’’ in mind. The main techniques are HTML5 and CSS3. The
-                    branding matches this project s requirements.
+                    When you press the button "Get a card" you get points
+                    randomly (max 11). Your max points are 21. It win who is
+                    closer to 21. It was made with Vanilla Javascript, CSS and
+                    HTML.
                   </p>
                   <a
                     href="https://felixhiguera.github.io/blackjack/"
@@ -117,9 +119,10 @@ const Projects = () => {
 
                   <h5 className="card-title">Countries API</h5>
                   <p className="card-text">
-                    This modern and appealing website was built with ‘’Mobile
-                    First’’ in mind. The main techniques are HTML5 and CSS3. The
-                    branding matches this project s requirements.
+                    This website can give info about countries like population,
+                    languages, capital, continent from the API, you can filter
+                    by Region or Country. It was made with Javascript, CSS and
+                    HTML.
                   </p>
                   <a
                     href="https://felixhiguera.github.io/countriesAPI/"
@@ -144,17 +147,15 @@ const Projects = () => {
                   alt="Platzi website"
                 />
                 <div className="card-body">
-                  <div class="badges mb-2">
+                  <div class="badges mb-2" id="badgesHawai">
                     <span class="badge bg-secondary">HTML</span>
 
                     <span class="badge bg-purple">Bootstrap</span>
                   </div>
                   <h5 className="card-title">Platzi Conf Hawai</h5>
-                  <p className="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam, alias. Nemo ex aliquid reiciendis ipsa corporis ea
-                    sapiente nobis possimus libero ab cupiditate consequuntur,
-                    harum provident accusantium obcaecati porro? Vitae.
+                  <p className="card-text" id="textHawai">
+                    This website is a landing page made with Bootstrap, CSS and
+                    HTML,
                   </p>
                   <a
                     href="https://felixhiguera.github.io/confhawai/"
@@ -163,6 +164,7 @@ const Projects = () => {
                     <FontAwesomeIcon icon={faGlobe} size="2x" color="blue" />
                   </a>
                   <a
+                    id="confhawai"
                     href="https://github.com/felixhiguera/confhawai"
                     target="_blank"
                   >

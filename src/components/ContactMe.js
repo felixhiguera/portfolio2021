@@ -25,8 +25,8 @@ const ContactMe = () => {
   return (
     <>
       <h2 className="text-center">Contact Me</h2>
-      <div id="contactMe" className="container">
-        <div className="container-fluid contact-form">
+      <div id="contactMe" className="container ">
+        <div className="container-fluid contact-form formContainer">
           <form onSubmit={sendEmail}>
             <div class="form-group">
               <label for="exampleFormControlInput1">Name</label>
